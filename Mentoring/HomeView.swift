@@ -1,11 +1,14 @@
-//
-//  HomeView.swift
-//  Mentoring
-//
-//  Created by Pol Piella Abadia on 01/09/2022.
-//
-
 import SwiftUI
+
+struct SessionsView: UIViewControllerRepresentable {
+    func updateUIViewController(_ uiViewController: SessionsViewController, context: Context) {
+        // NO-OP
+    }
+    
+    func makeUIViewController(context: Context) -> SessionsViewController {
+        SessionsViewController()
+    }
+}
 
 struct HomeView: View {
     var body: some View {
@@ -13,7 +16,7 @@ struct HomeView: View {
             Form {
                 Section(header: Text("Content")) {
                     NavigationLink {
-                        Text("Obj")
+                        SessionsView()
                     } label: {
                         Text("Obj-C Module")
                     }
