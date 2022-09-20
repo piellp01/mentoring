@@ -13,6 +13,7 @@
 		6BBF9DFC28C0A7E200B253DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BBF9DFA28C0A7E200B253DE /* LaunchScreen.storyboard */; };
 		6BDDC0C428C0F8600076811C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDDC0C328C0F8600076811C /* HomeView.swift */; };
 		6BDDC0CE28C0FAA20076811C /* SessionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BDDC0CD28C0FAA20076811C /* SessionsViewController.m */; };
+		987B6A5528D9EC3C0052CC7A /* SessionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 987B6A5428D9EC3C0052CC7A /* SessionTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		6BDDC0C828C0F9B60076811C /* Mentoring-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mentoring-Bridging-Header.h"; sourceTree = "<group>"; };
 		6BDDC0CD28C0FAA20076811C /* SessionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SessionsViewController.m; sourceTree = "<group>"; };
 		6BDDC0CF28C0FAB50076811C /* SessionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SessionsViewController.h; sourceTree = "<group>"; };
+		987B6A5328D9EC3C0052CC7A /* SessionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SessionTableViewCell.h; sourceTree = "<group>"; };
+		987B6A5428D9EC3C0052CC7A /* SessionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SessionTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 				6BDDC0C828C0F9B60076811C /* Mentoring-Bridging-Header.h */,
 				6BDDC0CD28C0FAA20076811C /* SessionsViewController.m */,
 				6BDDC0CF28C0FAB50076811C /* SessionsViewController.h */,
+				987B6A5328D9EC3C0052CC7A /* SessionTableViewCell.h */,
+				987B6A5428D9EC3C0052CC7A /* SessionTableViewCell.m */,
 			);
 			path = ObjCModule;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BDDC0C428C0F8600076811C /* HomeView.swift in Sources */,
+				987B6A5528D9EC3C0052CC7A /* SessionTableViewCell.m in Sources */,
 				6BBF9DF028C0A7E000B253DE /* AppDelegate.swift in Sources */,
 				6BBF9DF228C0A7E000B253DE /* SceneDelegate.swift in Sources */,
 				6BDDC0CE28C0FAA20076811C /* SessionsViewController.m in Sources */,
