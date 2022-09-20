@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
 
-@interface SessionsViewController: UIViewController
+@interface SessionsViewController: UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end
