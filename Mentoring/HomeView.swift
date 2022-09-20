@@ -22,6 +22,7 @@ struct HomeView: View {
                     }
                 }
             }
+            .navigationTitle("Mentoring App")
         }
     }
 }
