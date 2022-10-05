@@ -15,6 +15,7 @@
 		6BDDC0CE28C0FAA20076811C /* SessionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BDDC0CD28C0FAA20076811C /* SessionsViewController.m */; };
 		987B6A5528D9EC3C0052CC7A /* SessionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 987B6A5428D9EC3C0052CC7A /* SessionTableViewCell.m */; };
 		98D8ED6F28EDAD190076B7E4 /* Response.json in Resources */ = {isa = PBXBuildFile; fileRef = 98D8ED6E28EDAD190076B7E4 /* Response.json */; };
+		98D8ED7128EDAF3E0076B7E4 /* ProgrammeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D8ED7028EDAF3E0076B7E4 /* ProgrammeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		987B6A5328D9EC3C0052CC7A /* SessionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SessionTableViewCell.h; sourceTree = "<group>"; };
 		987B6A5428D9EC3C0052CC7A /* SessionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SessionTableViewCell.m; sourceTree = "<group>"; };
 		98D8ED6E28EDAD190076B7E4 /* Response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Response.json; sourceTree = "<group>"; };
+		98D8ED7028EDAF3E0076B7E4 /* ProgrammeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				987B6A5328D9EC3C0052CC7A /* SessionTableViewCell.h */,
 				987B6A5428D9EC3C0052CC7A /* SessionTableViewCell.m */,
 				98D8ED6E28EDAD190076B7E4 /* Response.json */,
+				98D8ED7028EDAF3E0076B7E4 /* ProgrammeModel.swift */,
 			);
 			path = ObjCModule;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				987B6A5528D9EC3C0052CC7A /* SessionTableViewCell.m in Sources */,
 				6BBF9DF028C0A7E000B253DE /* AppDelegate.swift in Sources */,
 				6BBF9DF228C0A7E000B253DE /* SceneDelegate.swift in Sources */,
+				98D8ED7128EDAF3E0076B7E4 /* ProgrammeModel.swift in Sources */,
 				6BDDC0CE28C0FAA20076811C /* SessionsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
