@@ -1,6 +1,14 @@
 #import "SessionsViewController.h"
 #import "SessionTableViewCell.h"
+#import "Mentoring-Swift.h"
 
+// NB You can't define properties in the implementation
+// If you don't want a property to be public you can define it like this with an interface
+@interface SessionsViewController()
+
+@property(strong) NSDictionary *programmeBundle;
+
+@end
 @implementation SessionsViewController
 
 - (void)viewDidLoad
@@ -19,16 +27,25 @@
     ]];
     [tableView registerClass:[SessionTableViewCell class]
       forCellReuseIdentifier: @"SessionTableViewCell"];
+    // https://developer.apple.com/documentation/foundation/bundle
+    NSBundle *main = [NSBundle mainBundle];
+    NSURL *resourceUrl = [main URLForResource:@"Response" withExtension:@"json"];
+    NSData *jsonData = [[NSData alloc] initWithContentsOfURL:resourceUrl];
+    NSError *jsonError;
+    NSDictionary *data = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&jsonError];
+    self.programmeBundle = data;
 }
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     UITableViewCell *myTableViewCell = [tableView dequeueReusableCellWithIdentifier:@"SessionTableViewCell"];
+    // TODO: Next time we want to populate the table view with the data from the canned response
     myTableViewCell.textLabel.text = @"Hi Pol!";
     return myTableViewCell;
 }
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    NSArray *programmes = [self.programmeBundle objectForKey:@"programmes"];
+    return programmes.count;
 }
 
 

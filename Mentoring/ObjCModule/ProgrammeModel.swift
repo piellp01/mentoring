@@ -8,7 +8,9 @@
 import Foundation
 
 // MARK: - Bundle
-struct Bundle: Codable {
+// 🤢
+@objc
+public class Bundle: NSObject, Codable {
     let programmes: [Programme]
 }
 
@@ -16,4 +18,5 @@ struct Bundle: Codable {
 struct Programme: Codable {
     let name, category: String
 }
+
 
